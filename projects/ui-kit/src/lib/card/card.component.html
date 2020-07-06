@@ -1,0 +1,13 @@
+<div
+  class="flex flex-column justify-between p-lg background-color-light box-shadow-heavy width-lg min-height-md transition-all-slow hover:scale-up"
+>
+  <div class="flex">
+    <div class="mr-lg mb-lg">
+      <ng-content select="uikit-card-left"></ng-content>
+    </div>
+    <div>
+      <ng-content select="uikit-card-right"></ng-content>
+    </div>
+  </div>
+  <ng-content select="uikit-card-bottom"></ng-content>
+</div>

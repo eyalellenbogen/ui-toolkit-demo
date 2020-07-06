@@ -1,0 +1,1457 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "ICardData",
+            "id": "interface-ICardData-c8bbe4e512cc150a9fb6f487f7ebb20805383e7eaaa58a3464968efee4892abeb3a4b16d1d9cc1c21eee8c2f4604296c7828ccb3d8d854a8fa7026cedb8c9f0d",
+            "file": "projects/ui-kit/src/lib/card/bad-card.component.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\r\n\r\nexport interface ICardData {\r\n  name: string;\r\n  email: string;\r\n  imageUrl: string;\r\n  buttons: { text: string; action: () => void }[];\r\n}\r\n\r\n@Component({\r\n  // tslint:disable-next-line: component-selector\r\n  selector: 'bad-card',\r\n  templateUrl: './bad-card.component.html',\r\n})\r\nexport class BadCardComponent {\r\n  @Input()\r\n  data: ICardData;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "buttons",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "email",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "imageUrl",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "IUser",
+            "id": "interface-IUser-0dd2961fcf0d01b9a2a97a5ff47ff392798beb30738ea941d8dfd58a939fec1486ca257cd84bd3019560e6ec3687cab5c4fd73835eeb45d067e223b9bca59738",
+            "file": "src/app/types.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IUser {\r\n  name: string;\r\n  avatar?: string;\r\n  email: string;\r\n  phone?: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "avatar",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "email",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "phone",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [
+        {
+            "name": "UiKitCardBottomDirective",
+            "id": "directive-UiKitCardBottomDirective-44dc39d945117923db3fe5c774c55c0f0cd0ebfa11a6a2ac009727c0178e3c207a66c4069db2830e7ede3fe054121f8c35a9582440440cd70e3c6fb3d08e69c9",
+            "file": "projects/ui-kit/src/lib/card/directives.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive } from '@angular/core';\r\n\r\n@Directive({\r\n  selector: 'uikit-card-left',\r\n})\r\nexport class UiKitCardLeftDirective {}\r\n\r\n@Directive({\r\n  selector: 'uikit-card-right',\r\n})\r\nexport class UiKitCardRightDirective {}\r\n\r\n@Directive({\r\n  selector: 'uikit-card-bottom',\r\n})\r\nexport class UiKitCardBottomDirective {}\r\n",
+            "selector": "uikit-card-bottom",
+            "providers": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": []
+        },
+        {
+            "name": "UiKitCardLeftDirective",
+            "id": "directive-UiKitCardLeftDirective-44dc39d945117923db3fe5c774c55c0f0cd0ebfa11a6a2ac009727c0178e3c207a66c4069db2830e7ede3fe054121f8c35a9582440440cd70e3c6fb3d08e69c9",
+            "file": "projects/ui-kit/src/lib/card/directives.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive } from '@angular/core';\r\n\r\n@Directive({\r\n  selector: 'uikit-card-left',\r\n})\r\nexport class UiKitCardLeftDirective {}\r\n\r\n@Directive({\r\n  selector: 'uikit-card-right',\r\n})\r\nexport class UiKitCardRightDirective {}\r\n\r\n@Directive({\r\n  selector: 'uikit-card-bottom',\r\n})\r\nexport class UiKitCardBottomDirective {}\r\n",
+            "selector": "uikit-card-left",
+            "providers": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": []
+        },
+        {
+            "name": "UiKitCardRightDirective",
+            "id": "directive-UiKitCardRightDirective-44dc39d945117923db3fe5c774c55c0f0cd0ebfa11a6a2ac009727c0178e3c207a66c4069db2830e7ede3fe054121f8c35a9582440440cd70e3c6fb3d08e69c9",
+            "file": "projects/ui-kit/src/lib/card/directives.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive } from '@angular/core';\r\n\r\n@Directive({\r\n  selector: 'uikit-card-left',\r\n})\r\nexport class UiKitCardLeftDirective {}\r\n\r\n@Directive({\r\n  selector: 'uikit-card-right',\r\n})\r\nexport class UiKitCardRightDirective {}\r\n\r\n@Directive({\r\n  selector: 'uikit-card-bottom',\r\n})\r\nexport class UiKitCardBottomDirective {}\r\n",
+            "selector": "uikit-card-right",
+            "providers": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [],
+            "methodsClass": []
+        }
+    ],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-43d367b2d92d4d9b062e502a5496c8cf496ec01ed33adfdd978e22467d61979b83368d33b53be0d00e76a06bc1737286997d139840a3968975d0be28c472f1e4",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'fancypants-app'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'fancypants-app';\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../../projects/style-kit/theme/index\";\r\n$background: $dark;\r\n$headerHeight: 50px;\r\n.app-container {\r\n  height: 100vh;\r\n  display: flex;\r\n\r\n  aside {\r\n    width: 260px;\r\n    background-color: $background;\r\n    color: #fff;\r\n    .logo {\r\n      width: 90%;\r\n      margin: auto;\r\n      text-align: center;\r\n      padding: 20px 0;\r\n      border-bottom: 1px solid rgba(255, 255, 255, 0.1);\r\n\r\n      img {\r\n        width: 60%;\r\n        margin: auto;\r\n      }\r\n    }\r\n\r\n    ul.menu {\r\n      list-style-type: none;\r\n      margin: 0;\r\n      padding: 0;\r\n      margin-top: 20px;\r\n      font-size: 18px;\r\n      li {\r\n        padding: 10px 20px;\r\n        cursor: pointer;\r\n        position: relative;\r\n        transition: all 0.2s;\r\n        &:before {\r\n          content: \"\";\r\n          position: absolute;\r\n          left: 0;\r\n          top: 0;\r\n          background-color: $background;\r\n          width: 0;\r\n          height: 100%;\r\n          background-color: rgba(255, 255, 255, 0.1);\r\n          transition: all 0.2s;\r\n        }\r\n        &.active,\r\n        &:hover {\r\n          padding-left: 25px;\r\n          &:before {\r\n            width: 100%;\r\n          }\r\n        }\r\n        div {\r\n          position: relative;\r\n          z-index: 10;\r\n          i {\r\n            margin-right: 10px;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  .main-content {\r\n    box-sizing: border-box;\r\n    flex: 1;\r\n    .app-header {\r\n      height: $headerHeight;\r\n      background-color: #fff;\r\n      box-sizing: border-box;\r\n      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\r\n      .page-title {\r\n        i {\r\n          color: $accent;\r\n          margin-right: 5px;\r\n        }\r\n        margin-left: 40px;\r\n        font-size: 24px;\r\n        line-height: $headerHeight;\r\n      }\r\n    }\r\n\r\n    section.content {\r\n      padding: 40px 40px 0 40px;\r\n      flex: 1;\r\n    }\r\n  }\r\n}\r\n",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"app-container\">\r\n  <aside>\r\n    <div class=\"logo\">\r\n      <img src=\"/assets/logo.png\" class=\"width-full\" alt=\"\" />\r\n    </div>\r\n    <ul class=\"menu\">\r\n      <li class=\"active\">\r\n        <div><i class=\"fas fa-users\"></i>Users</div>\r\n      </li>\r\n      <li>\r\n        <div><i class=\"fas fa-briefcase\"></i>Accounts</div>\r\n      </li>\r\n      <li>\r\n        <div><i class=\"fas fa-cogs\"></i>Settings</div>\r\n      </li>\r\n    </ul>\r\n  </aside>\r\n  <div class=\"main-content\">\r\n    <div class=\"app-header\">\r\n      <div class=\"page-title\"><i class=\"fas fa-users\"></i> Users</div>\r\n    </div>\r\n    <section class=\"content\">\r\n      <app-user-list></app-user-list>\r\n    </section>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "BadCardComponent",
+            "id": "component-BadCardComponent-c8bbe4e512cc150a9fb6f487f7ebb20805383e7eaaa58a3464968efee4892abeb3a4b16d1d9cc1c21eee8c2f4604296c7828ccb3d8d854a8fa7026cedb8c9f0d",
+            "file": "projects/ui-kit/src/lib/card/bad-card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "bad-card",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./bad-card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "ICardData",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\r\n\r\nexport interface ICardData {\r\n  name: string;\r\n  email: string;\r\n  imageUrl: string;\r\n  buttons: { text: string; action: () => void }[];\r\n}\r\n\r\n@Component({\r\n  // tslint:disable-next-line: component-selector\r\n  selector: 'bad-card',\r\n  templateUrl: './bad-card.component.html',\r\n})\r\nexport class BadCardComponent {\r\n  @Input()\r\n  data: ICardData;\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<div\r\n  class=\"flex flex-column justify-between p-lg background-color-light box-shadow-heavy width-lg min-height-md transition-all-slow hover:scale-up\"\r\n>\r\n  <div class=\"flex\">\r\n    <div class=\"mr-lg mb-lg\">\r\n      <uikit-avatar>\r\n        <img src=\"/assets/images/{{ data.imageUrl }}\" />\r\n      </uikit-avatar>\r\n    </div>\r\n    <div>\r\n      <div class=\"text-xl mb-sm\">{{ data.name }}</div>\r\n      <div>{{ data.email }}</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"flex justify-end\">\r\n    <button uikitButton=\"secondary\">{{data.buttons[0].text}}</button>\r\n    <button uikitButton=\"primary\" class=\"ml-md\">{{data.buttons[1].text}}</button>\r\n  </div>\r\n</div>"
+        },
+        {
+            "name": "UiKitAvatarComponent",
+            "id": "component-UiKitAvatarComponent-c0498fa53bc084f5ecc15e50470249c61f4ada2ddfeac02afcc4e41dc5bf112e39a0e3ca5fd3b06d579d4fd2597f4579f32eff29763b58c6113b71f36139c6bc",
+            "file": "projects/ui-kit/src/lib/avatar/avatar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "uikit-avatar",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./avatar.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 10,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'uikit-avatar',\r\n  templateUrl: './avatar.component.html',\r\n})\r\nexport class UiKitAvatarComponent implements OnInit {\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\r\n  class=\"flex width-sm height-sm background-color-dark border-round text-align-center p-md\"\r\n>\r\n  <ng-content></ng-content>\r\n</div>\r\n"
+        },
+        {
+            "name": "UiKitButtonComponent",
+            "id": "component-UiKitButtonComponent-7ba57adc7d9979558754fd13776e72b9e5dab99e8a534545df60d9e15793d69dca44a67921ee3615f84cdecd8a2688efdb9384752c91444fcf5d808642e469ce",
+            "file": "projects/ui-kit/src/lib/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "button[uikitButton]",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "uikitButton",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "ButtonType",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [
+                {
+                    "name": "class",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "class.background-color-accent",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "class.background-color-light",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 38,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "class.color-light",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "class.color-primary",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 38,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Input, Component, HostBinding } from '@angular/core';\r\n\r\nexport type ButtonType = 'primary' | 'secondary';\r\n\r\n@Component({\r\n  selector: 'button[uikitButton]',\r\n  templateUrl: './button.component.html',\r\n})\r\nexport class UiKitButtonComponent {\r\n  @Input('uikitButton')\r\n  buttonType: ButtonType;\r\n\r\n  @HostBinding('class')\r\n  public get classList() {\r\n    return [\r\n      'border-none',\r\n      'outline-none',\r\n      'py-sm',\r\n      'px-md',\r\n      'text-align-center',\r\n      'cursor-pointer',\r\n      'font-size-md',\r\n      'transition-all-fast',\r\n      'hover:box-shadow-heavy',\r\n    ].join(' ');\r\n  }\r\n\r\n  @HostBinding('class.background-color-accent')\r\n  @HostBinding('class.color-light')\r\n  public get isPrimary() {\r\n    return !this.buttonType || this.buttonType === 'primary';\r\n  }\r\n\r\n  @HostBinding('class.background-color-light')\r\n  @HostBinding('class.color-primary')\r\n  public get isSecondary() {\r\n    return this.buttonType === 'secondary';\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "accessors": {
+                "classList": {
+                    "name": "classList",
+                    "getSignature": {
+                        "name": "classList",
+                        "type": "",
+                        "returnType": "",
+                        "line": 16
+                    }
+                },
+                "isPrimary": {
+                    "name": "isPrimary",
+                    "getSignature": {
+                        "name": "isPrimary",
+                        "type": "",
+                        "returnType": "",
+                        "line": 32
+                    }
+                },
+                "isSecondary": {
+                    "name": "isSecondary",
+                    "getSignature": {
+                        "name": "isSecondary",
+                        "type": "",
+                        "returnType": "",
+                        "line": 38
+                    }
+                }
+            },
+            "templateData": "<ng-content></ng-content>"
+        },
+        {
+            "name": "UiKitCardComponent",
+            "id": "component-UiKitCardComponent-844847cde9f89838b135cf69a478341e6fa54597f07e1689c914c16b5bba5f3791227d081e451cbf751a84f919af5cf9009ef957a1c234187e1a61d8df94a040",
+            "file": "projects/ui-kit/src/lib/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "uikit-card",
+            "styleUrls": [
+                "./card.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'uikit-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss'],\r\n})\r\nexport class UiKitCardComponent implements OnInit {\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./card.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\r\n  class=\"flex flex-column justify-between p-lg background-color-light box-shadow-heavy width-lg min-height-md transition-all-slow hover:scale-up\"\r\n>\r\n  <div class=\"flex\">\r\n    <div class=\"mr-lg mb-lg\">\r\n      <ng-content select=\"uikit-card-left\"></ng-content>\r\n    </div>\r\n    <div>\r\n      <ng-content select=\"uikit-card-right\"></ng-content>\r\n    </div>\r\n  </div>\r\n  <ng-content select=\"uikit-card-bottom\"></ng-content>\r\n</div>\r\n"
+        },
+        {
+            "name": "UserCardComponent",
+            "id": "component-UserCardComponent-71727824788e2c9f030bfc4a3d22324308f9097402c41adeeadb484575afddea3df2807d2c477e0a9fb1622b74e3941a89361a7585779c1907aa78d762bd4bfd",
+            "file": "src/app/user-card/user-card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-user-card",
+            "styleUrls": [
+                "./user-card.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./user-card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "IUser",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 14,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\r\nimport { IUser } from '../types';\r\n\r\n@Component({\r\n  selector: 'app-user-card',\r\n  templateUrl: './user-card.component.html',\r\n  styleUrls: ['./user-card.component.scss'],\r\n})\r\nexport class UserCardComponent implements OnInit {\r\n  @Input()\r\n  public user: IUser;\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "$accent: #317ee4;\r\n\r\n.user-card {\r\n  box-sizing: border-box;\r\n  padding: 15px;\r\n  background-color: #fff;\r\n  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);\r\n  width: 400px;\r\n  min-height: 160px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  transition: all 0.3s;\r\n  &:hover {\r\n    transform: scale(1.05);\r\n  }\r\n  &__top {\r\n    display: flex;\r\n  }\r\n  &__bottom {\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    button {\r\n      border: none;\r\n      background: $accent;\r\n      color: #fff;\r\n      outline: none;\r\n      padding: 5px 10px;\r\n      text-align: center;\r\n      cursor: pointer;\r\n      margin-left: 10px;\r\n      font-size: 16px;\r\n      transition: all 0.2s;\r\n\r\n      &:first-child {\r\n        background-color: #fff;\r\n        color: #333;\r\n      }\r\n\r\n      &:hover {\r\n        box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: 0.2);\r\n      }\r\n    }\r\n  }\r\n}\r\n.user {\r\n  &__name {\r\n    margin-bottom: 5px;\r\n  }\r\n  &__avatar {\r\n    width: 80px;\r\n    height: 80px;\r\n    background-color: #2c303a;\r\n    position: relative;\r\n    border-radius: 50%;\r\n    box-sizing: border-box;\r\n    text-align: center;\r\n    padding: 10px;\r\n    margin-right: 15px;\r\n    margin-bottom: 15px;\r\n    img {\r\n      height: 100%;\r\n    }\r\n  }\r\n  &__name {\r\n    font-size: 24px;\r\n  }\r\n}\r\n",
+                    "styleUrl": "./user-card.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"user-card\">\r\n  <div class=\"user-card__top\">\r\n    <div class=\"user__avatar\">\r\n      <img src=\"/assets/images/{{ user.avatar }}\" />\r\n    </div>\r\n    <div class=\"user__info\">\r\n      <div class=\"user__name\">{{ user.name }}</div>\r\n      <div class=\"user__email\">{{ user.email }}</div>\r\n    </div>\r\n  </div>\r\n  <div class=\"user-card__bottom\">\r\n    <button class=\"btn1\">Delete</button>\r\n    <button class=\"btn2\">Edit</button>\r\n  </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "UserListComponent",
+            "id": "component-UserListComponent-ed659f29b5c7866547671d278e6759802f5b392df4ac438abd2451ac3231868d6a7ba264e4b2cdd09e3dd8e2f8293e76e0393f7ec37deb1acc627a61f8c87b80",
+            "file": "src/app/user-list/user-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-user-list",
+            "styleUrls": [
+                "./user-list.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./user-list.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "users",
+                    "defaultValue": "users",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 38,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport { IUser } from '../types';\r\n\r\nconst users: IUser[] = [\r\n  {\r\n    name: 'Tony Stark',\r\n    email: 'ironman76@fancypants.com',\r\n    avatar: 'ironman.png',\r\n  },\r\n  {\r\n    name: 'Steve Rogers',\r\n    email: 'cap@fancypants.com',\r\n    avatar: 'cap.png',\r\n  },\r\n  {\r\n    name: 'Bruce Banner',\r\n    email: 'smash@fancypants.com',\r\n    avatar: 'hulk.png',\r\n  },\r\n  {\r\n    name: 'Donald Blake',\r\n    email: 'love.my.mjolnir@fancypants.com',\r\n    avatar: 'thor.png',\r\n  },\r\n  {\r\n    name: 'Carol Danvers',\r\n    email: 'cptmarvel@fancypants.com',\r\n    avatar: 'marvel.png',\r\n  },\r\n];\r\n\r\n@Component({\r\n  selector: 'app-user-list',\r\n  templateUrl: './user-list.component.html',\r\n  styleUrls: ['./user-list.component.scss'],\r\n})\r\nexport class UserListComponent implements OnInit {\r\n  public users = users;\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".user-list {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  > app-user-card {\r\n    margin: 0 20px 20px 0;\r\n  }\r\n}\r\n",
+                    "styleUrl": "./user-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 38
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"user-list\">\r\n  <app-user-card *ngFor=\"let user of users\" [user]=\"user\"></app-user-card>\r\n</div>\r\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-6b9653abf153a12fdc880c15a4f6bbb5f3cab2ad66c84eb4b05c925089f7ed708139b1f0cb3c5ed21751bf31f4b26da530be352b00e425adb3009486d0df773d",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { BrowserModule } from '@angular/platform-browser';\r\nimport { NgModule } from '@angular/core';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { UserListComponent } from './user-list/user-list.component';\r\nimport { UserCardComponent } from './user-card/user-card.component';\r\nimport { UiKitCardModule, UiKitButtonModule, UiKitAvatarModule } from 'ui-kit';\r\n\r\n@NgModule({\r\n  declarations: [AppComponent, UserListComponent, UserCardComponent],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    UiKitCardModule,\r\n    UiKitButtonModule,\r\n    UiKitAvatarModule,\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "UserCardComponent"
+                        },
+                        {
+                            "name": "UserListComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "UiKitAvatarModule"
+                        },
+                        {
+                            "name": "UiKitButtonModule"
+                        },
+                        {
+                            "name": "UiKitCardModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-0d35b15900e29ee9eb86e545f4ac6413beaa210d9fd586d8e841a865868f58c9dcb9f5c9b9e6e0c177daae189314fc600d855eb6cccc253622c1ac3cd84b8924",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { Routes, RouterModule } from '@angular/router';\r\n\r\n\r\nconst routes: Routes = [];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AppRoutingModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiKitAvatarModule",
+            "id": "module-UiKitAvatarModule-10fed38a429f430b32bd7758339ada91d3f7cf4387717c705c7203acc4f752c79ffdf42eebae7905d561d148f9c6abbb42b7030016faaf7504ec2b17d365546d",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-kit/src/lib/avatar/avatar.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { UiKitAvatarComponent } from './avatar.component';\r\n\r\n@NgModule({\r\n  declarations: [UiKitAvatarComponent],\r\n  exports: [UiKitAvatarComponent],\r\n})\r\nexport class UiKitAvatarModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "UiKitAvatarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "UiKitAvatarComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiKitButtonModule",
+            "id": "module-UiKitButtonModule-e91181ac740918a4de86894dd12a73f79b6fb42c9810490a7baaf3ca8b0cced8eab03f1953e76560f48ff7ba06a1174cfb0a906c3e4d899d737223d22dde6642",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-kit/src/lib/button/button.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { UiKitButtonComponent } from './button.component';\r\n\r\n@NgModule({\r\n  declarations: [UiKitButtonComponent],\r\n  exports: [UiKitButtonComponent],\r\n})\r\nexport class UiKitButtonModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "UiKitButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "UiKitButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiKitCardModule",
+            "id": "module-UiKitCardModule-2738318a9c58fd74c92d57196504f37f66cf046e1a5ac40f631d5f12aab5c4a0426540fc285fb2c61e9d1b1c50cd342e3392a548be985c66b5fc96871b5bbf2f",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-kit/src/lib/card/card.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { UiKitCardComponent } from './card.component';\r\nimport {\r\n  UiKitCardBottomDirective,\r\n  UiKitCardLeftDirective,\r\n  UiKitCardRightDirective,\r\n} from './directives';\r\nimport { BadCardComponent } from './bad-card.component';\r\nimport { UiKitButtonModule } from '../button';\r\nimport { UiKitAvatarModule } from '../avatar';\r\n\r\n@NgModule({\r\n  imports: [UiKitButtonModule, UiKitAvatarModule],\r\n  declarations: [\r\n    BadCardComponent,\r\n    UiKitCardComponent,\r\n    UiKitCardBottomDirective,\r\n    UiKitCardLeftDirective,\r\n    UiKitCardRightDirective,\r\n  ],\r\n  exports: [\r\n    BadCardComponent,\r\n    UiKitCardComponent,\r\n    UiKitCardBottomDirective,\r\n    UiKitCardLeftDirective,\r\n    UiKitCardRightDirective,\r\n  ],\r\n})\r\nexport class UiKitCardModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "BadCardComponent"
+                        },
+                        {
+                            "name": "UiKitCardBottomDirective"
+                        },
+                        {
+                            "name": "UiKitCardComponent"
+                        },
+                        {
+                            "name": "UiKitCardLeftDirective"
+                        },
+                        {
+                            "name": "UiKitCardRightDirective"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "UiKitAvatarModule"
+                        },
+                        {
+                            "name": "UiKitButtonModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "BadCardComponent"
+                        },
+                        {
+                            "name": "UiKitCardBottomDirective"
+                        },
+                        {
+                            "name": "UiKitCardComponent"
+                        },
+                        {
+                            "name": "UiKitCardLeftDirective"
+                        },
+                        {
+                            "name": "UiKitCardRightDirective"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiKitModule",
+            "id": "module-UiKitModule-570f30e7e4bbaa7e4fd187367eab97873b3453fa74cf2905bd06ffec8b89b1b6bd84fc3adb3d6567e6b4de6f379006e8b783a4a3c800e09553fe0a159b81ec63",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui-kit/src/lib/ui-kit.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { UiKitCardModule } from './card/card.module';\r\nimport { UiKitButtonModule } from './button/button.module';\r\nimport { UiKitAvatarModule } from './avatar/avatar.module';\r\n\r\n@NgModule({ imports: [UiKitCardModule, UiKitButtonModule, UiKitAvatarModule] })\r\nexport class UiKitModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "UiKitAvatarModule"
+                        },
+                        {
+                            "name": "UiKitButtonModule"
+                        },
+                        {
+                            "name": "UiKitCardModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: true\r\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  production: false\r\n}"
+            },
+            {
+                "name": "Main",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/lib/avatar/avatar.component.story.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Main",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/lib/button/button.component.story.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/lib/avatar/avatar.component.story.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<UiKitAvatarComponent>",
+                "defaultValue": "(args: UiKitAvatarComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <uikit-avatar>\r\n        <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAEr2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMzAiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iMzAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjcyLjAiCiAgIHRpZmY6WVJlc29sdXRpb249IjcyLjAiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSIzMCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjMwIgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDct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\"/>\r\n    </uikit-avatar>\r\n  `,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/lib/button/button.component.story.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<UiKitButtonComponent>",
+                "defaultValue": "(args: UiKitButtonComponent) => ({\r\n  props: args,\r\n  template: `<button [uikitButton]=\"type\">Button</button>`,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/lib/card/card.component.story.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<UiKitCardComponent>",
+                "defaultValue": "(args: UiKitCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n  <uikit-card>\r\n  <uikit-card-left>\r\n  <div class=\"background-color-dark color-light width-sm p-sm\">\r\n  Content on the left\r\n  </div>\r\n</uikit-card-left>\r\n<uikit-card-right>\r\n  <div class=\"background-color-dark color-light width-sm p-sm\">\r\n  Content on the right\r\n  </div>\r\n  </uikit-card-right>\r\n      <uikit-card-bottom>\r\n  <div class=\"background-color-dark color-light width-sm p-sm\">\r\n  Content on the bottom\r\n  </div>\r\n  </uikit-card-bottom>\r\n  </uikit-card>\r\n`,\r\n})"
+            },
+            {
+                "name": "Templates",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui-kit/src/lib/card/card.component.story.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "users",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/user-list/user-list.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "IUser[]",
+                "defaultValue": "[\r\n  {\r\n    name: 'Tony Stark',\r\n    email: 'ironman76@fancypants.com',\r\n    avatar: 'ironman.png',\r\n  },\r\n  {\r\n    name: 'Steve Rogers',\r\n    email: 'cap@fancypants.com',\r\n    avatar: 'cap.png',\r\n  },\r\n  {\r\n    name: 'Bruce Banner',\r\n    email: 'smash@fancypants.com',\r\n    avatar: 'hulk.png',\r\n  },\r\n  {\r\n    name: 'Donald Blake',\r\n    email: 'love.my.mjolnir@fancypants.com',\r\n    avatar: 'thor.png',\r\n  },\r\n  {\r\n    name: 'Carol Danvers',\r\n    email: 'cptmarvel@fancypants.com',\r\n    avatar: 'marvel.png',\r\n  },\r\n]"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "ButtonType",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"primary\" | \"secondary\"",
+                "file": "projects/ui-kit/src/lib/button/button.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/ui-kit/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: true\r\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: false\r\n}"
+                }
+            ],
+            "projects/ui-kit/src/lib/avatar/avatar.component.story.ts": [
+                {
+                    "name": "Main",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/lib/avatar/avatar.component.story.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/lib/avatar/avatar.component.story.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<UiKitAvatarComponent>",
+                    "defaultValue": "(args: UiKitAvatarComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <uikit-avatar>\r\n        <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAEr2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6dGlmZj0iaHR0cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMzAiCiAgIHRpZmY6SW1hZ2VXaWR0aD0iMzAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjcyLjAiCiAgIHRpZmY6WVJlc29sdXRpb249IjcyLjAiCiAgIGV4aWY6UGl4ZWxYRGltZW5zaW9uPSIzMCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjMwIgogICBleGlmOkNvbG9yU3BhY2U9IjEiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjAtMDct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\"/>\r\n    </uikit-avatar>\r\n  `,\r\n})"
+                }
+            ],
+            "projects/ui-kit/src/lib/button/button.component.story.ts": [
+                {
+                    "name": "Main",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/lib/button/button.component.story.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/lib/button/button.component.story.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<UiKitButtonComponent>",
+                    "defaultValue": "(args: UiKitButtonComponent) => ({\r\n  props: args,\r\n  template: `<button [uikitButton]=\"type\">Button</button>`,\r\n})"
+                }
+            ],
+            "projects/ui-kit/src/lib/card/card.component.story.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/lib/card/card.component.story.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<UiKitCardComponent>",
+                    "defaultValue": "(args: UiKitCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n  <uikit-card>\r\n  <uikit-card-left>\r\n  <div class=\"background-color-dark color-light width-sm p-sm\">\r\n  Content on the left\r\n  </div>\r\n</uikit-card-left>\r\n<uikit-card-right>\r\n  <div class=\"background-color-dark color-light width-sm p-sm\">\r\n  Content on the right\r\n  </div>\r\n  </uikit-card-right>\r\n      <uikit-card-bottom>\r\n  <div class=\"background-color-dark color-light width-sm p-sm\">\r\n  Content on the bottom\r\n  </div>\r\n  </uikit-card-bottom>\r\n  </uikit-card>\r\n`,\r\n})"
+                },
+                {
+                    "name": "Templates",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui-kit/src/lib/card/card.component.story.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/app/user-list/user-list.component.ts": [
+                {
+                    "name": "users",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/user-list/user-list.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IUser[]",
+                    "defaultValue": "[\r\n  {\r\n    name: 'Tony Stark',\r\n    email: 'ironman76@fancypants.com',\r\n    avatar: 'ironman.png',\r\n  },\r\n  {\r\n    name: 'Steve Rogers',\r\n    email: 'cap@fancypants.com',\r\n    avatar: 'cap.png',\r\n  },\r\n  {\r\n    name: 'Bruce Banner',\r\n    email: 'smash@fancypants.com',\r\n    avatar: 'hulk.png',\r\n  },\r\n  {\r\n    name: 'Donald Blake',\r\n    email: 'love.my.mjolnir@fancypants.com',\r\n    avatar: 'thor.png',\r\n  },\r\n  {\r\n    name: 'Carol Danvers',\r\n    email: 'cptmarvel@fancypants.com',\r\n    avatar: 'marvel.png',\r\n  },\r\n]"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "projects/ui-kit/src/lib/button/button.component.ts": [
+                {
+                    "name": "ButtonType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"primary\" | \"secondary\"",
+                    "file": "projects/ui-kit/src/lib/button/button.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                }
+            ]
+        }
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/ui-kit/src/lib/avatar/avatar.component.story.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Main",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/avatar/avatar.component.story.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/avatar/avatar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UiKitAvatarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/button/button.component.story.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Main",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/button/button.component.story.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UiKitButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/bad-card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "BadCardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/bad-card.component.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ICardData",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/card.component.story.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/card.component.story.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Templates",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UiKitCardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/directives.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "UiKitCardBottomDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/directives.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "UiKitCardLeftDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/lib/card/directives.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "UiKitCardRightDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui-kit/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/types.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IUser",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/user-card/user-card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UserCardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/user-list/user-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UserListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/user-list/user-list.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "users",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
