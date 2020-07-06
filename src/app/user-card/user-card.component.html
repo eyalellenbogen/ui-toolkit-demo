@@ -1,15 +1,32 @@
-<div class="user-card">
-  <div class="user-card__top">
-    <div class="user__avatar">
-      <img src="/assets/images/{{ user.avatar }}" />
+<div
+  class="flex flex-column justify-between p-lg background-color-light box-shadow-heavy width-lg min-height-md transition-all-slow hover:scale-up"
+>
+  <div class="flex">
+    <div
+      class="width-sm height-sm background-color-dark border-round text-align-center p-md mr-lg mb-lg"
+    >
+      <img
+        class="height-full"
+        src="/assets/images/{{ user.avatar }}"
+        alt="{{ user.name }}"
+      />
     </div>
-    <div class="user__info">
-      <div class="user__name">{{ user.name }}</div>
-      <div class="user__email">{{ user.email }}</div>
+    <div>
+      <div class="text-xl mb-sm">{{ user.name }}</div>
+      <div>{{ user.email }}</div>
+      <div>{{ user.phone }}</div>
     </div>
   </div>
-  <div class="user-card__bottom">
-    <button class="btn1">Delete</button>
-    <button class="btn2">Edit</button>
+  <div class="flex justify-end">
+    <button
+      class="border-none outline-none background-color-light color-primary py-sm px-md text-align-center cursor-pointer ml-md font-size-md transition-all-fast hover:box-shadow-heavy"
+    >
+      Delete
+    </button>
+    <button
+      class="border-none outline-none background-color-accent color-light py-sm px-md text-align-center cursor-pointer ml-md font-size-md transition-all-fast hover:box-shadow-heavy"
+    >
+      Edit
+    </button>
   </div>
 </div>
