@@ -1,0 +1,19 @@
+<div
+  class="flex flex-column justify-between p-lg background-color-light box-shadow-heavy width-lg min-height-md transition-all-slow hover:scale-up"
+>
+  <div class="flex">
+    <div class="mr-lg mb-lg">
+      <uikit-avatar>
+        <img src="/assets/images/{{ data.imageUrl }}" />
+      </uikit-avatar>
+    </div>
+    <div>
+      <div class="text-xl mb-sm">{{ data.name }}</div>
+      <div>{{ data.email }}</div>
+    </div>
+  </div>
+  <div class="flex justify-end">
+    <button uikitButton="secondary">{{data.buttons[0].text}}</button>
+    <button uikitButton="primary" class="ml-md">{{data.buttons[1].text}}</button>
+  </div>
+</div>
